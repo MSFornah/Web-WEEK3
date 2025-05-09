@@ -7,11 +7,24 @@
     <title>PLP Week2 Assignment</title>
 </head>
 <body>
+    <!-- <div class="title-div">
+        <h2 id="nav-title">Navigation Bar</h2>
+    </div> -->
+    <div class="nav-bar-div">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#list-items">List</a></li>
+                <li><a href="#table-section">Table</a></li>
+                <li><a href="#form-section">Form</a></li>
+                <li><a href="#image-section">Image</a></li>
+            </ul>
+        </nav>
+    </div>
     <h1>WEB DEVELOPMENT ASSIGNMENT</h1> &nbsp;
     <h2>CREATING AN ORDERED LIST</h2>
     <h3>LIST OF PLP COURSES:</h3>
     <!-- Declaration of the list tag-->
-    <ol type="i">
+    <ol type="i" id="list-items">
         <li>Software Engineering</li>
         <li>Python Programming</li>
         <li>Database Design & management</li>
@@ -19,13 +32,13 @@
         <li>Startup Building</li>
     </ol>
     <!--Embedding an Image-->
-    <img src="https://images.pexels.com/photos/14475371/pexels-photo-14475371.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" 
+    <img id="image-section" src="https://images.pexels.com/photos/14475371/pexels-photo-14475371.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" 
     alt="Sierra Leone's Capital" width="400px" height="300px">
     <br> <br>
     
     <!-- Creating a table-->
      <h3>Tables in HTML</h3>
-    <table border="5">
+    <table border="5" id="table-section">
         <thead>
             <tr>
                 <th>Name</th>
@@ -69,7 +82,7 @@
     </table>
 
 <!-- Creating a Form in HTML-->
-<div class="form-div">
+<div class="form-div" id="form-section">
  <h3 class="form-heading">STUDENT REGISTRATION FORM</h3>
  <form action="" method="">
     <label for="name">Full Name:</label>

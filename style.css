@@ -1,8 +1,47 @@
 
-        body {
+       /*For Smooth scrolling between sections */
+
+       html{
+        scroll-behavior: smooth;
+       }
+
+       body {
             font-family: Arial, sans-serif;
-            margin: 40px;
             background-color: #f9f9f9;
+        }
+
+        /*To hide the scrollbar */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* #nav-title{
+            background-color: #333;
+            display: flex;
+            width: 100%;
+            height: 4rem;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            color: #ccc;
+        } */
+
+        ul{
+            display: flex;
+            gap: 3rem ;
+            justify-content: center;
+            list-style-type: none;
+            font-size: x-large;
+        }
+
+        a{
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        a:hover{
+            color: #400fc7;
+            transition: 0.5s;
         }
 
         h1, h2, h3{
@@ -79,4 +118,39 @@
         button:hover,
         input[type="button"]:hover {
             background-color: #2980b9;
+        }
+
+/* Media Query
+        Screen Size for Mobile Devices */
+        @media(max-width: 480px){
+            body{
+                font-family: Georgia, serif;
+                font-size: 1rem;
+            }
+            img{
+                width: 100%;
+            }
+        }
+
+        /* Tablets Devices */
+        @media(min-width: 481px){
+            body{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 0.8rem;
+            }
+
+            h1,h2,h3{
+                color: #6495f7;
+                text-align: center;
+
+            }
+        }
+
+        /* For larger screens */
+        @media(min-width: 1025px){
+            body{
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 1em;
+            }
+            
         }
